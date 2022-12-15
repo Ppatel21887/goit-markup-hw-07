@@ -1,0 +1,42 @@
+@use '../utility/variable';
+.customer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.customer__list {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.customer__list--item {
+    width: 170px;
+    height: 92px;
+    box-sizing: border-box;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+&:not(:last-child) {
+    margin-right: 30px;
+}
+}
+
+.customer__list--itemLink {
+    color: variable.$logo-color;
+    background-color: #afb1b8;
+}
+
+.customer-logo {
+    fill: #afb1b8;
+    margin: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+&:hover,
+&:focus {
+    fill: currentColor;
+}}
+
+

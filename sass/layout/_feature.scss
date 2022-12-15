@@ -1,0 +1,52 @@
+@use '../utility/variable';
+.feature {
+    padding-bottom: 94px;
+}
+
+/*styling for icons*/
+
+.feature__icon {
+    padding-top: 58px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature__icon--img {
+    border: 2px solid #f5f4fa;
+    border-radius: 8px;
+    padding: 25px 102.34px;
+    width: 70px;
+    height: 70px;
+    background: #f5f4fa;
+    border-radius: 4px;
+}
+
+/* style for featurelist*/
+.feature__list {
+    display: flex;
+    justify-content: center;
+}
+
+.feature__list--item {
+    width:270px;
+&:not(:first-child) {
+    margin-left: 35px;
+}
+}
+
+.feature__title {
+    color: variable.$title-main-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feature__text {
+    color: variable.$text-main-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+}
